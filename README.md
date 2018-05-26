@@ -1,0 +1,2 @@
+# PatternDecoratorHomework
+Реализация паттерна Decorator
