@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Calzone.cs" />
+    <Compile Include="Components\Hawaiian.cs" />
+    <Compile Include="Components\Italian.cs" />
+    <Compile Include="Components\Margarita.cs" />
+    <Compile Include="Components\Pizza.cs" />
+    <Compile Include="Components\Sicilian.cs" />
+    <Compile Include="Conditions\Bacon.cs" />
+    <Compile Include="Conditions\Cheese.cs" />
+    <Compile Include="Conditions\Chicken.cs" />
+    <Compile Include="Conditions\ConditionDecorator.cs" />
+    <Compile Include="Conditions\Olives.cs" />
+    <Compile Include="Conditions\Tomatoes.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
