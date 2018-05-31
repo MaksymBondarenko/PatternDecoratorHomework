@@ -28,6 +28,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            button1.Enabled = false;
             comboBox2.Enabled = false;
             comboBox3.Enabled = false;
             comboBox4.Enabled = false;
@@ -75,6 +76,8 @@ namespace WindowsFormsApp1
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+            button1.Enabled = true;
             Buf = 0;
             switch (comboBox1.SelectedIndex)
             {
@@ -155,6 +158,7 @@ namespace WindowsFormsApp1
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            button1.Enabled = true;
             Buf = 0;
             switch (comboBox1.SelectedIndex)
             {
@@ -234,6 +238,7 @@ namespace WindowsFormsApp1
         }
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
+            button1.Enabled = true;
             Buf = 0;
             switch (comboBox1.SelectedIndex)
             {
@@ -310,6 +315,7 @@ namespace WindowsFormsApp1
         }
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
+            button1.Enabled = true;
             Buf = 0;
             switch (comboBox1.SelectedIndex)
             {
@@ -387,6 +393,7 @@ namespace WindowsFormsApp1
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
+            button1.Enabled = true;
             Buf = 0;
             switch (comboBox1.SelectedIndex)
             {
@@ -480,6 +487,26 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (comboBox2.Text == "")
+            {
+                comboBox2.Text = "0";
+            }
+            if (comboBox3.Text == "")
+            {
+                comboBox3.Text = "0";
+            }
+            if (comboBox4.Text == "")
+            {
+                comboBox4.Text = "0";
+            }
+            if (comboBox5.Text == "")
+            {
+                comboBox5.Text = "0";
+            }
+            if (comboBox6.Text == "")
+            {
+                comboBox6.Text = "0";
+            }
             int Sum = Convert.ToInt16(textBox1.Text)+ Convert.ToInt16(textBox2.Text)* Convert.ToInt16(comboBox2.Text)+ Convert.ToInt16(textBox3.Text) * Convert.ToInt16(comboBox3.Text)+ Convert.ToInt16(textBox4.Text) * Convert.ToInt16(comboBox4.Text)+ Convert.ToInt16(textBox5.Text) * Convert.ToInt16(comboBox5.Text)+Convert.ToInt16(textBox6.Text) * Convert.ToInt16(comboBox6.Text);
             textBox7.Text = Sum.ToString();
 
